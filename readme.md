@@ -1,15 +1,10 @@
--- =========================================
+
 -- STUDENT MANAGEMENT SYSTEM DATABASE
--- FINAL COMPLETE DB SETUP
--- =========================================
 
 CREATE DATABASE IF NOT EXISTS student_management;
 
 USE student_management;
-
--- =========================================
 -- USERS TABLE
--- =========================================
 
 CREATE TABLE users (
 
@@ -32,9 +27,8 @@ CREATE TABLE users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- =========================================
+
 -- COURSES TABLE
--- =========================================
 
 CREATE TABLE courses (
 
@@ -49,9 +43,7 @@ CREATE TABLE courses (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- =========================================
 -- STUDENTS TABLE
--- =========================================
 
 CREATE TABLE students (
 
@@ -94,9 +86,7 @@ CREATE TABLE students (
     ON DELETE SET NULL
 );
 
--- =========================================
 -- ATTENDANCE TABLE
--- =========================================
 
 CREATE TABLE attendance (
 
@@ -118,9 +108,7 @@ CREATE TABLE attendance (
     ON DELETE CASCADE
 );
 
--- =========================================
 -- FEES TABLE
--- =========================================
 
 CREATE TABLE fees (
 
@@ -145,9 +133,7 @@ CREATE TABLE fees (
     ON DELETE CASCADE
 );
 
--- =========================================
 -- NOTICES TABLE
--- =========================================
 
 CREATE TABLE notices (
 
@@ -162,9 +148,7 @@ CREATE TABLE notices (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- =========================================
 -- RESULTS TABLE
--- =========================================
 
 CREATE TABLE results (
 
@@ -190,9 +174,7 @@ CREATE TABLE results (
     ON DELETE CASCADE
 );
 
--- =========================================
 -- TIMETABLE TABLE
--- =========================================
 
 CREATE TABLE timetable (
 
@@ -211,10 +193,9 @@ CREATE TABLE timetable (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- =========================================
+
 -- DEFAULT ADMIN ACCOUNT
 -- PASSWORD: admin123
--- =========================================
 
 INSERT INTO users (
 
